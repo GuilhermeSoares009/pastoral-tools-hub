@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-warm-white font-body text-text-primary antialiased;
+}
+
+* {
+  @apply scroll-smooth;
+}
+
+::selection {
+  background: rgba(74, 111, 165, 0.2);
+  color: #2c4563;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

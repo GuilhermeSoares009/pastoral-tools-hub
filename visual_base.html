@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ferramentas Católicas Online</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0F3690","primary-dark": "#0A2563",
+                        "background-light": "#FAF9F6","background-dark": "#0B1120",
+                        "accent-gold": "#C5A059","accent-gold-light": "#E5D1A4",
+                        "surface": "#FDFBF7","text-main": "#1A1C21",
+                        "text-sub": "#5F6B82"
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"],
+                        "serif": ["Lora", "serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.375rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(15, 54, 144, 0.05)',
+                        'card': '0 1px 3px rgba(0,0,0,0.04), 0 2px 4px rgba(0,0,0,0.06)',
+                        'gold': '0 4px 14px 0 rgba(197, 160, 89, 0.2)',
+                    }
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+        .font-serif {
+            font-family: 'Lora', serif;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #C5A059 0%, #D4AF37 50%, #B8860B 100%);
+        }
+        .sapphire-gradient {
+            background: linear-gradient(135deg, #0F3690 0%, #0A2563 100%);
+        }
+    </style>
+</head>
+<body class="bg-background-light text-text-main h-screen flex overflow-hidden selection:bg-primary/20 selection:text-primary">
+<aside class="w-64 bg-surface border-r border-[#E5E1D8] flex-col justify-between hidden md:flex shrink-0 z-20">
+<div class="flex flex-col h-full">
+<div class="h-20 flex items-center px-6 border-b border-[#E5E1D8]/50">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-3xl">church</span>
+<h1 class="text-text-main text-lg font-bold leading-tight tracking-tight font-serif">Ferramentas<br/><span class="text-primary text-base font-normal">Católicas</span></h1>
+</div>
+</div>
+<div class="flex-1 overflow-y-auto py-6 px-4 flex flex-col gap-8">
+<div class="flex flex-col gap-2">
+<h2 class="px-2 text-xs font-bold uppercase tracking-wider text-accent-gold mb-1">Categorias</h2>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary text-white font-medium shadow-md shadow-primary/20 transition-all" href="#">
+<span class="material-symbols-outlined text-[22px]">grid_view</span>
+<span class="text-sm">Todas</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-text-sub hover:bg-background-light hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-[22px] group-hover:text-primary transition-colors">photo_camera</span>
+<span class="text-sm">PASCOM</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-text-sub hover:bg-background-light hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-[22px] group-hover:text-primary transition-colors">music_note</span>
+<span class="text-sm">Música</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-text-sub hover:bg-background-light hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-[22px] group-hover:text-primary transition-colors">auto_stories</span>
+<span class="text-sm">Liturgia</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-text-sub hover:bg-background-light hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-[22px] group-hover:text-primary transition-colors">water_drop</span>
+<span class="text-sm">Sacramentos</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-text-sub hover:bg-background-light hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-[22px] group-hover:text-primary transition-colors">event_note</span>
+<span class="text-sm">Textos &amp; Datas</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-text-sub hover:bg-background-light hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-[22px] group-hover:text-primary transition-colors">handyman</span>
+<span class="text-sm">Utilidades Pastorais</span>
+</a>
+</div>
+<div class="px-2">
+<div class="sapphire-gradient rounded-xl p-4 text-white relative overflow-hidden group cursor-pointer shadow-lg shadow-primary/20 border-b-4 border-accent-gold/40">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-2xl mb-2 text-accent-gold-light">volunteer_activism</span>
+<h3 class="font-bold text-sm mb-1">Apoie o projeto</h3>
+<p class="text-xs text-white/80 leading-relaxed">Ajude a manter as ferramentas gratuitas para todos.</p>
+</div>
+<div class="absolute -bottom-4 -right-4 w-20 h-20 bg-accent-gold/20 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
+</div>
+</div>
+</div>
+<div class="p-4 border-t border-[#E5E1D8] bg-surface">
+<button class="w-full flex items-center justify-center gap-2 bg-[#F1EDE4] hover:bg-accent-gold-light text-text-main h-10 rounded-lg text-sm font-bold transition-colors mb-3">
+<span class="material-symbols-outlined text-[18px] text-accent-gold">add_circle</span>
+                Sugerir ferramenta
+            </button>
+<div class="flex items-center justify-center gap-2 text-text-sub text-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">verified_user</span>
+<span>Sem cadastro • Sem dados salvos</span>
+</div>
+</div>
+</div>
+</aside>
+<div class="flex-1 flex flex-col h-full overflow-hidden relative">
+<div class="md:hidden h-16 bg-surface border-b border-[#E5E1D8] flex items-center justify-between px-4 shrink-0">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-2xl">church</span>
+<h1 class="text-text-main font-bold font-serif">Ferramentas Católicas</h1>
+</div>
+<button class="text-text-main p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<header class="bg-surface/90 backdrop-blur-md border-b border-[#E5E1D8] px-8 py-4 shrink-0 z-10 sticky top-0">
+<div class="max-w-6xl mx-auto w-full flex flex-col gap-4">
+<div class="flex items-center justify-between gap-6">
+<div class="flex-1 max-w-2xl relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-text-sub">search</span>
+</div>
+<input class="w-full pl-10 pr-4 py-3 bg-[#F1EDE4] border-none rounded-xl text-text-main placeholder-text-sub focus:ring-2 focus:ring-accent-gold/30 focus:bg-white transition-all text-sm font-medium" placeholder="Buscar ferramenta (ex: liturgia diária, cantos, pascom)..." type="text"/>
+</div>
+<div class="hidden lg:flex items-center gap-6 text-sm font-medium text-text-sub">
+<a class="hover:text-primary transition-colors" href="#">Sobre</a>
+<a class="hover:text-primary transition-colors" href="#">Contato</a>
+<div class="h-4 w-px bg-[#E5E1D8]"></div>
+<a class="text-primary font-bold hover:text-accent-gold transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+                        Doar
+                    </a>
+</div>
+</div>
+<div class="flex gap-2 overflow-x-auto scrollbar-hide pb-1">
+<button class="flex items-center gap-1.5 px-4 py-1.5 rounded-full sapphire-gradient text-white text-xs font-medium whitespace-nowrap shadow-md shadow-primary/30 border border-primary/20">
+<span class="material-symbols-outlined text-[16px] text-accent-gold-light">star</span>
+                    Populares
+                </button>
+<button class="flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white border border-[#E5E1D8] text-text-sub hover:text-primary hover:border-primary/30 text-xs font-medium whitespace-nowrap transition-colors">
+<span class="material-symbols-outlined text-[16px]">photo_camera</span>
+                    PASCOM
+                </button>
+<button class="flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white border border-[#E5E1D8] text-text-sub hover:text-primary hover:border-primary/30 text-xs font-medium whitespace-nowrap transition-colors">
+<span class="material-symbols-outlined text-[16px]">music_note</span>
+                    Música
+                </button>
+<button class="flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white border border-[#E5E1D8] text-text-sub hover:text-primary hover:border-primary/30 text-xs font-medium whitespace-nowrap transition-colors">
+<span class="material-symbols-outlined text-[16px]">book</span>
+                    Liturgia
+                </button>
+<button class="flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white border border-[#E5E1D8] text-text-sub hover:text-primary hover:border-primary/30 text-xs font-medium whitespace-nowrap transition-colors">
+<span class="material-symbols-outlined text-[16px]">edit_document</span>
+                    Redes Sociais
+                </button>
+</div>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto bg-background-light p-4 md:p-8">
+<div class="max-w-6xl mx-auto flex flex-col gap-10">
+<section>
+<div class="flex items-end justify-between mb-6 px-1 border-l-4 border-accent-gold pl-4">
+<div>
+<h2 class="text-2xl font-serif font-bold text-text-main">Ferramentas Populares</h2>
+<p class="text-text-sub text-sm mt-1">Recursos essenciais para a vida pastoral e litúrgica.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+<div class="bg-surface rounded-xl p-5 border border-[#E5E1D8] shadow-card hover:shadow-gold hover:border-accent-gold/40 transition-all group flex flex-col h-full cursor-pointer relative overflow-hidden">
+<div class="absolute top-0 right-0 p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-accent-gold text-xl">arrow_outward</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-primary/5 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all shadow-sm">
+<span class="material-symbols-outlined text-[28px]">queue_music</span>
+</div>
+<h3 class="font-bold text-text-main text-lg mb-2 group-hover:text-primary transition-colors font-serif">Gerador de Repertório</h3>
+<p class="text-text-sub text-sm leading-relaxed mb-6 flex-1">Crie repertórios para missas automaticamente com base no tempo litúrgico.</p>
+<span class="text-primary text-xs font-bold uppercase tracking-wider flex items-center gap-1 border-t border-[#E5E1D8]/50 pt-4">
+                            Abrir ferramenta
+                            <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</span>
+</div>
+<div class="bg-surface rounded-xl p-5 border border-[#E5E1D8] shadow-card hover:shadow-gold hover:border-accent-gold/40 transition-all group flex flex-col h-full cursor-pointer relative overflow-hidden">
+<div class="absolute top-0 right-0 p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-accent-gold text-xl">arrow_outward</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-accent-gold/10 text-accent-gold flex items-center justify-center mb-4 group-hover:bg-accent-gold group-hover:text-white transition-all shadow-sm">
+<span class="material-symbols-outlined text-[28px]">post_add</span>
+</div>
+<h3 class="font-bold text-text-main text-lg mb-2 group-hover:text-accent-gold transition-colors font-serif">Gerador de Texto Social</h3>
+<p class="text-text-sub text-sm leading-relaxed mb-6 flex-1">Legendas criativas para Instagram e Facebook da paróquia com IA.</p>
+<span class="text-accent-gold text-xs font-bold uppercase tracking-wider flex items-center gap-1 border-t border-[#E5E1D8]/50 pt-4">
+                            Abrir ferramenta
+                            <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</span>
+</div>
+<div class="bg-surface rounded-xl p-5 border border-[#E5E1D8] shadow-card hover:shadow-gold hover:border-accent-gold/40 transition-all group flex flex-col h-full cursor-pointer relative overflow-hidden">
+<div class="absolute top-0 right-0 p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-accent-gold text-xl">arrow_outward</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-primary/5 text-primary flex items-center justify-center mb-4 group-hover:sapphire-gradient group-hover:text-white transition-all shadow-sm">
+<span class="material-symbols-outlined text-[28px]">format_list_numbered</span>
+</div>
+<h3 class="font-bold text-text-main text-lg mb-2 group-hover:text-primary transition-colors font-serif">Ordem dos Cantos</h3>
+<p class="text-text-sub text-sm leading-relaxed mb-6 flex-1">Guia rápido da ordem correta dos cânticos para diferentes solenidades.</p>
+<span class="text-primary text-xs font-bold uppercase tracking-wider flex items-center gap-1 border-t border-[#E5E1D8]/50 pt-4">
+                            Abrir ferramenta
+                            <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</span>
+</div>
+<div class="bg-surface rounded-xl p-5 border border-[#E5E1D8] shadow-card hover:shadow-gold hover:border-accent-gold/40 transition-all group flex flex-col h-full cursor-pointer relative overflow-hidden">
+<div class="absolute top-0 right-0 p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-accent-gold text-xl">arrow_outward</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-primary/5 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all shadow-sm">
+<span class="material-symbols-outlined text-[28px]">checklist</span>
+</div>
+<h3 class="font-bold text-text-main text-lg mb-2 group-hover:text-primary transition-colors font-serif">Checklist da PASCOM</h3>
+<p class="text-text-sub text-sm leading-relaxed mb-6 flex-1">Lista de verificação para cobertura fotográfica de missas e eventos.</p>
+<span class="text-primary text-xs font-bold uppercase tracking-wider flex items-center gap-1 border-t border-[#E5E1D8]/50 pt-4">
+                            Abrir ferramenta
+                            <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</span>
+</div>
+<div class="bg-surface rounded-xl p-5 border border-[#E5E1D8] shadow-card hover:shadow-gold hover:border-accent-gold/40 transition-all group flex flex-col h-full cursor-pointer relative overflow-hidden">
+<div class="absolute top-0 right-0 p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-accent-gold text-xl">arrow_outward</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-accent-gold/10 text-accent-gold flex items-center justify-center mb-4 group-hover:bg-accent-gold group-hover:text-white transition-all shadow-sm">
+<span class="material-symbols-outlined text-[28px]">subtitles</span>
+</div>
+<h3 class="font-bold text-text-main text-lg mb-2 group-hover:text-accent-gold transition-colors font-serif">Legendas Litúrgicas</h3>
+<p class="text-text-sub text-sm leading-relaxed mb-6 flex-1">Gerador de arquivos .SRT ou texto para projeção durante a celebração.</p>
+<span class="text-accent-gold text-xs font-bold uppercase tracking-wider flex items-center gap-1 border-t border-[#E5E1D8]/50 pt-4">
+                            Abrir ferramenta
+                            <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</span>
+</div>
+<div class="bg-surface rounded-xl p-5 border border-[#E5E1D8] shadow-card hover:shadow-gold hover:border-accent-gold/40 transition-all group flex flex-col h-full cursor-pointer relative overflow-hidden">
+<div class="absolute top-0 right-0 p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-accent-gold text-xl">arrow_outward</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-primary/5 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all shadow-sm">
+<span class="material-symbols-outlined text-[28px]">live_tv</span>
+</div>
+<h3 class="font-bold text-text-main text-lg mb-2 group-hover:text-primary transition-colors font-serif">Roteiro de Transmissão</h3>
+<p class="text-text-sub text-sm leading-relaxed mb-6 flex-1">Template organizador para equipes de streaming e corte de câmera.</p>
+<span class="text-primary text-xs font-bold uppercase tracking-wider flex items-center gap-1 border-t border-[#E5E1D8]/50 pt-4">
+                            Abrir ferramenta
+                            <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</span>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2 flex flex-col gap-4">
+<div class="flex items-center gap-2 mb-2 px-1">
+<span class="material-symbols-outlined text-accent-gold">stars</span>
+<h2 class="text-xl font-serif font-bold text-text-main">Destaques da Semana</h2>
+</div>
+<div class="bg-surface rounded-xl p-4 border border-accent-gold/40 flex items-center gap-5 shadow-sm hover:shadow-gold transition-all cursor-pointer group relative overflow-hidden">
+<div class="absolute inset-y-0 left-0 w-1 bg-accent-gold"></div>
+<div class="w-16 h-16 shrink-0 rounded-lg gold-gradient flex items-center justify-center text-white shadow-sm">
+<span class="material-symbols-outlined text-[32px]">calendar_month</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-start">
+<h3 class="font-bold text-text-main group-hover:text-primary transition-colors truncate font-serif">Textos Prontos para Datas Católicas</h3>
+<span class="bg-accent-gold/20 text-accent-gold-dark text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide border border-accent-gold/30">Novo</span>
+</div>
+<p class="text-text-sub text-sm mt-1 line-clamp-2">Mensagens para o dia do Padre, dia dos Avós, Padroeiros e outras datas magnas.</p>
+</div>
+<div class="p-2 bg-[#F1EDE4] rounded-full text-text-main group-hover:sapphire-gradient group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</div>
+</div>
+<div class="bg-surface rounded-xl p-4 border border-[#E5E1D8] flex items-center gap-5 shadow-sm hover:shadow-gold transition-all cursor-pointer group">
+<div class="w-16 h-16 shrink-0 rounded-lg bg-primary/5 flex items-center justify-center text-primary border border-primary/10">
+<span class="material-symbols-outlined text-[32px]">spellcheck</span>
+</div>
+<div class="flex-1 min-w-0">
+<h3 class="font-bold text-text-main group-hover:text-primary transition-colors font-serif">Verificador de Texto Litúrgico</h3>
+<p class="text-text-sub text-sm mt-1 line-clamp-2">Valide se as orações e leituras do seu folheto estão de acordo com o Missal Romano.</p>
+</div>
+<div class="p-2 bg-[#F1EDE4] rounded-full text-text-main group-hover:sapphire-gradient group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</div>
+</div>
+<div class="bg-surface rounded-xl p-4 border border-[#E5E1D8] flex items-center gap-5 shadow-sm hover:shadow-gold transition-all cursor-pointer group">
+<div class="w-16 h-16 shrink-0 rounded-lg bg-accent-gold/10 flex items-center justify-center text-accent-gold border border-accent-gold/20">
+<span class="material-symbols-outlined text-[32px]">church</span>
+</div>
+<div class="flex-1 min-w-0">
+<h3 class="font-bold text-text-main group-hover:text-primary transition-colors font-serif">Checklist para Casamento</h3>
+<p class="text-text-sub text-sm mt-1 line-clamp-2">Organize a documentação e os detalhes da cerimônia religiosa de casamento.</p>
+</div>
+<div class="p-2 bg-[#F1EDE4] rounded-full text-text-main group-hover:sapphire-gradient group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2 mb-2 px-1">
+<span class="material-symbols-outlined text-text-sub">history</span>
+<h2 class="text-xl font-serif font-bold text-text-main">Recentes</h2>
+</div>
+<div class="bg-surface rounded-xl border border-[#E5E1D8] shadow-sm overflow-hidden">
+<a class="flex items-center gap-3 p-4 border-b border-[#E5E1D8] hover:bg-background-light transition-colors group" href="#">
+<span class="material-symbols-outlined text-text-sub group-hover:text-primary">description</span>
+<div class="flex-1 min-w-0">
+<p class="text-sm font-medium text-text-main truncate">Modelo de Ata de Reunião</p>
+<p class="text-xs text-text-sub">Adicionado há 2 dias</p>
+</div>
+</a>
+<a class="flex items-center gap-3 p-4 border-b border-[#E5E1D8] hover:bg-background-light transition-colors group" href="#">
+<span class="material-symbols-outlined text-text-sub group-hover:text-primary">image</span>
+<div class="flex-1 min-w-0">
+<p class="text-sm font-medium text-text-main truncate">Templates Canva para Dízimo</p>
+<p class="text-xs text-text-sub">Adicionado há 4 dias</p>
+</div>
+</a>
+<a class="flex items-center gap-3 p-4 border-b border-[#E5E1D8] hover:bg-background-light transition-colors group" href="#">
+<span class="material-symbols-outlined text-text-sub group-hover:text-primary">lyrics</span>
+<div class="flex-1 min-w-0">
+<p class="text-sm font-medium text-text-main truncate">Cifras para Adoração</p>
+<p class="text-xs text-text-sub">Adicionado há 1 semana</p>
+</div>
+</a>
+<a class="flex items-center justify-center gap-2 p-3 bg-[#F1EDE4] text-xs font-bold text-primary hover:text-accent-gold transition-colors" href="#">
+                            Ver todo o histórico
+                            <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<footer class="mt-10 py-10 border-t border-[#E5E1D8] flex flex-col md:flex-row justify-between items-center gap-4 text-text-sub">
+<div class="flex flex-col gap-1 text-center md:text-left">
+<div class="flex items-center justify-center md:justify-start gap-2 text-primary mb-2">
+<span class="material-symbols-outlined text-2xl text-accent-gold">church</span>
+<span class="font-serif font-bold text-text-main text-lg">Ferramentas Católicas</span>
+</div>
+<p class="text-sm max-w-xs">Ferramentas gratuitas para facilitar o dia a dia pastoral e servir à Igreja.</p>
+<p class="text-xs opacity-70 mt-4">© 2023 Ferramentas Católicas Online. <span class="italic text-primary font-medium">Ad Maiorem Dei Gloriam.</span></p>
+</div>
+<div class="flex gap-8 text-sm font-medium">
+<a class="hover:text-primary transition-colors" href="#">Privacidade</a>
+<a class="hover:text-primary transition-colors" href="#">Termos</a>
+<a class="hover:text-primary transition-colors" href="#">Enviar Feedback</a>
+</div>
+</footer>
+</div>
+</main>
+</div>
+
+</body></html>
