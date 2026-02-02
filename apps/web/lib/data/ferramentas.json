@@ -5,18 +5,13 @@
     "description": "Crie repertórios para missas automaticamente com base no tempo litúrgico.",
     "href": "/gerador-repertorio",
     "category": "musica",
-    "tags": ["missa", "tempo litúrgico", "cantos"],
+    "tags": [
+      "missa",
+      "tempo litúrgico",
+      "cantos"
+    ],
     "popular": true,
     "accent": "blue"
-  },
-  {
-    "id": "gerador-texto-social",
-    "title": "Gerador de Texto Social",
-    "description": "Legendas criativas para Instagram e Facebook da paróquia com IA.",
-    "category": "pascom",
-    "tags": ["redes sociais", "pascom", "legendas"],
-    "popular": true,
-    "accent": "gold"
   },
   {
     "id": "ordem-cantos",
@@ -24,7 +19,11 @@
     "description": "Guia rápido da ordem correta dos cânticos para diferentes solenidades.",
     "href": "/ordem-cantos",
     "category": "liturgia",
-    "tags": ["cantos", "solenidades", "ordem"],
+    "tags": [
+      "cantos",
+      "solenidades",
+      "ordem"
+    ],
     "popular": true,
     "accent": "blue"
   },
@@ -34,7 +33,11 @@
     "description": "Lista de verificação para cobertura fotográfica de missas e eventos.",
     "href": "/checklist-pascom",
     "category": "pascom",
-    "tags": ["checklist", "eventos", "foto"],
+    "tags": [
+      "checklist",
+      "eventos",
+      "foto"
+    ],
     "popular": true,
     "accent": "blue"
   },
@@ -43,7 +46,11 @@
     "title": "Legendas Litúrgicas",
     "description": "Gerador de arquivos .SRT ou texto para projeção durante a celebração.",
     "category": "liturgia",
-    "tags": ["srt", "projeção", "texto"],
+    "tags": [
+      "srt",
+      "projeção",
+      "texto"
+    ],
     "popular": true,
     "accent": "gold"
   },
@@ -52,7 +59,11 @@
     "title": "Roteiro de Transmissão",
     "description": "Template organizador para equipes de streaming e corte de câmera.",
     "category": "utilidades",
-    "tags": ["transmissão", "streaming", "roteiro"],
+    "tags": [
+      "transmissão",
+      "streaming",
+      "roteiro"
+    ],
     "popular": true,
     "accent": "blue"
   },
@@ -62,7 +73,11 @@
     "description": "Mensagens para dia do Padre, dia dos Avós, Padroeiros e outras datas magnas.",
     "href": "/textos-datas-catolicas",
     "category": "textos",
-    "tags": ["mensagens", "datas", "padroeiro"],
+    "tags": [
+      "mensagens",
+      "datas",
+      "padroeiro"
+    ],
     "popular": false,
     "accent": "gold"
   },
@@ -71,7 +86,11 @@
     "title": "Verificador de Texto Litúrgico",
     "description": "Valide se as orações e leituras do seu folheto estão de acordo com o Missal Romano.",
     "category": "liturgia",
-    "tags": ["missal", "validação", "texto"],
+    "tags": [
+      "missal",
+      "validação",
+      "texto"
+    ],
     "popular": false,
     "accent": "blue"
   },
@@ -81,7 +100,11 @@
     "description": "Organize a documentação e os detalhes da cerimônia religiosa de casamento.",
     "href": "/checklist-casamento",
     "category": "sacramentos",
-    "tags": ["casamento", "documentos", "cerimônia"],
+    "tags": [
+      "casamento",
+      "documentos",
+      "cerimônia"
+    ],
     "popular": false,
     "accent": "blue"
   }

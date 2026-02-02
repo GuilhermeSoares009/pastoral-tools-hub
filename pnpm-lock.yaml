@@ -70,12 +70,6 @@ importers:
         specifier: ^5.4.5
         version: 5.9.3
 
-  workers/generate-text:
-    devDependencies:
-      wrangler:
-        specifier: ^3.99.0
-        version: 3.114.17
-
   workers/process-srt:
     devDependencies:
       wrangler:

@@ -89,7 +89,6 @@ Forms: React Hook Form + Zod (validação)
 ### Backend (Serverless)
 ```
 Platform: Cloudflare Workers
-AI: Cloudflare Workers AI (@cf/meta/llama-2-7b-chat-int8)
 Cache: Cloudflare KV
 Database: Cloudflare D1 (SQLite serverless) - opcional
 ```
@@ -388,60 +387,7 @@ git commit -m "test(workers): adiciona testes unitários"
 
 ---
 
-### 🎯 Milestone 5: Ferramentas com IA (Semana 5)
-**Objetivo**: Implementar ferramentas que usam Workers + IA
 
-**Ferramentas:**
-1. **Gerador de Texto para Redes da Igreja** (Workers AI)
-2. **Roteiro de Transmissão da Missa** (template + IA)
-3. **Gerador de Legendas Litúrgicas** (processamento .SRT)
-
-**Entregáveis:**
-- [ ] Worker: gerador de texto (Cloudflare AI)
-- [ ] Worker: processador de SRT
-- [ ] 3 páginas de ferramentas integradas
-- [ ] Loading states elegantes
-- [ ] Error handling com mensagens amigáveis
-- [ ] Cache agressivo (KV)
-
-**Commits Granulares Esperados:**
-```
-git commit -m "feat(generate-text-worker): implementa prompt para textos católicos"
-git commit -m "feat(generate-text-worker): adiciona cache por tema"
-git commit -m "feat(texto-social): cria interface de entrada"
-git commit -m "feat(texto-social): integra com worker AI"
-git commit -m "feat(texto-social): adiciona loading state"
-git commit -m "feat(texto-social): implementa retry automático"
-git commit -m "feat(process-srt-worker): implementa parser SRT"
-git commit -m "feat(legendas): cria upload de arquivo .SRT"
-git commit -m "feat(legendas): processa e exibe resultado"
-git commit -m "style: ajusta feedback visual de carregamento"
-```
-
----
-
-### 🎯 Milestone 6: Ferramenta Avançada (Semana 6)
-**Objetivo**: Implementar verificador de texto litúrgico (NLP complexo)
-
-**Entregáveis:**
-- [ ] Worker com regras litúrgicas
-- [ ] Detecção de termos incorretos
-- [ ] Sugestões de correção
-- [ ] Interface com highlights
-- [ ] Explicações pedagógicas
-
-**Commits Granulares Esperados:**
-```
-git commit -m "feat(validate-worker): adiciona dicionário litúrgico"
-git commit -m "feat(validate-worker): implementa validação de termos"
-git commit -m "feat(validate-worker): adiciona sistema de sugestões"
-git commit -m "feat(verificador): cria interface de editor"
-git commit -m "feat(verificador): implementa syntax highlighting"
-git commit -m "feat(verificador): exibe erros inline"
-git commit -m "feat(verificador): adiciona tooltips explicativos"
-```
-
----
 
 ### 🎯 Milestone 7: SEO e Performance (Semana 7)
 **Objetivo**: Otimização máxima para tráfego orgânico
