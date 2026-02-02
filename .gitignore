@@ -77,3 +77,6 @@ tmp/
 temp/
 *.tmp
 *.temp
+
+# Artifacts
+visual_base.html
