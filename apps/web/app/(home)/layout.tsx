@@ -8,7 +8,7 @@ export default function HomeLayout({ children }: { children: React.ReactNode }) 
     <ToolSearchProvider>
       <div className="flex min-h-screen">
         <Sidebar />
-        <div className="flex min-h-screen flex-1 flex-col">
+        <div className="flex min-h-screen flex-1 flex-col md:ml-80">
           <Header />
           <main className="flex-1 bg-warm-white px-4 py-6 md:px-8">
             {children}

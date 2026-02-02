@@ -3,6 +3,31 @@
 @tailwind utilities;
 
 :root {
+  /* Cores */
+  --marian-blue: #4A6FA5;           /* Azul mariano médio - cor principal */
+  --deep-blue: #2C4563;             /* Azul profundo - hierarquia e títulos */
+  --warm-white: #FAF9F7;            /* Fundo quente */
+  --light-gray: #F5F4F2;            /* Cinza muito claro */
+  --gold-accent: #C9A961;           /* Dourado discreto - apenas ícones ativos */
+  --text-primary: #1A1A1A;          /* Texto principal */
+  --text-secondary: #666666;        /* Texto secundário */
+  
+  /* Espaçamento */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2.5rem;
+  --spacing-xl: 4rem;
+
+  /* Bordas */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+
+  /* Sombras suaves */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 8px 24px rgba(74, 111, 165, 0.12);
+
   color-scheme: light;
 }
 

@@ -9,13 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'marian-blue': '#4A6FA5',
-        'deep-blue': '#2C4563',
-        'warm-white': '#FAF9F7',
-        'light-gray': '#F5F4F2',
-        'gold-accent': '#C9A961',
-        'text-primary': '#1A1A1A',
-        'text-secondary': '#666666',
+        'marian-blue': 'var(--marian-blue)',
+        'deep-blue': 'var(--deep-blue)',
+        'warm-white': 'var(--warm-white)',
+        'light-gray': 'var(--light-gray)',
+        'gold-accent': 'var(--gold-accent)',
+        'text-primary': 'var(--text-primary)',
+        'text-secondary': 'var(--text-secondary)',
       },
       fontFamily: {
         display: ['var(--font-display)', 'serif'],
