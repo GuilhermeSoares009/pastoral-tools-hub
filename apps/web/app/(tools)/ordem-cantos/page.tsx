@@ -3,9 +3,15 @@ import type { Metadata } from 'next';
 import { OrdemCantosClient } from '@/components/tools/OrdemCantosClient';
 
 export const metadata: Metadata = {
-  title: 'Ordem dos Cantos da Missa | Ferramentas Católicas Online',
+  title: 'Guia da Ordem dos Cantos da Missa',
   description:
-    'Guia pastoral com a ordem recomendada dos cantos na missa, organizado por partes da celebração.',
+    'Consulte a ordem correta dos cânticos litúrgicos para Solenidades, Festas e Memórias. Guia prático para equipes de liturgia e canto.',
+  keywords: ['ordem da missa', 'quais cantos cantar', 'regra litúrgica', 'cânticos missa', 'formação litúrgica'],
+  openGraph: {
+    title: 'Guia da Ordem dos Cantos da Missa',
+    description: 'Saiba exatamente quais cantos devem ser executados em cada tipo de celebração.',
+    url: 'https://ferramentascatolicas.com.br/ordem-cantos',
+  },
 };
 
 export default function OrdemCantosPage() {

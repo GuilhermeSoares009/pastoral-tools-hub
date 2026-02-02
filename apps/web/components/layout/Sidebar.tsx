@@ -13,6 +13,7 @@ import {
   ChevronRight,
 } from 'lucide-react';
 
+import { Logo } from '@/components/ui/Logo';
 import toolsData from '@/lib/data/ferramentas.json';
 
 const CATEGORY_CONFIG: Record<string, { label: string; icon: LucideIcon }> = {
@@ -44,15 +45,11 @@ export function Sidebar() {
       <div className="flex h-full flex-col">
         {/* Header Branding */}
         <div className="flex h-24 items-center gap-4 border-b border-light-gray/40 px-8">
-          <div className="rounded-lg bg-marian-blue/5 p-2">
-            <Landmark className="h-6 w-6 text-marian-blue" />
-          </div>
-          <div className="leading-none">
-            <p className="font-display text-lg font-bold tracking-tight text-text-primary">Ferramentas</p>
-            <p className="text-xs font-medium uppercase tracking-widest text-gold-accent">Católicas</p>
-          </div>
+          <Link href="/" aria-label="Ir para página inicial">
+            <Logo />
+          </Link>
         </div>
-        
+
         {/* Scrollable Content */}
         <div className="flex-1 overflow-y-auto px-6 py-8 scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-transparent">
           <div className="relative space-y-8">
@@ -63,14 +60,14 @@ export function Sidebar() {
               <div key={categoryKey} className="relative">
                 {/* Category Header */}
                 <div className="flex items-center gap-3 mb-3">
-                   <div className="relative z-10 flex h-2 w-2 items-center justify-center rounded-full bg-white ring-2 ring-gray-100">
-                     <div className="h-1 w-1 rounded-full bg-gold-accent" />
-                   </div>
-                   <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">
+                  <div className="relative z-10 flex h-2 w-2 items-center justify-center rounded-full bg-white ring-2 ring-gray-100">
+                    <div className="h-1 w-1 rounded-full bg-gold-accent" />
+                  </div>
+                  <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">
                     {CATEGORY_CONFIG[categoryKey].label}
-                   </h3>
+                  </h3>
                 </div>
-                
+
                 {/* Tools List */}
                 <div className="ml-1 space-y-0.5 border-l border-transparent pl-4">
                   {toolsByCategory[categoryKey].map((tool) => (
@@ -91,7 +88,7 @@ export function Sidebar() {
           {/* Support Card */}
           <div className="mt-10 mb-4 rounded-xl bg-gradient-to-br from-marian-blue to-deep-blue p-5 text-white shadow-lg shadow-marian-blue/20">
             <div className="mb-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/10 backdrop-blur-sm">
-                <Heart className="h-4 w-4 text-gold-accent" />
+              <Heart className="h-4 w-4 text-gold-accent" />
             </div>
             <h3 className="font-display text-base font-semibold">Apoie o projeto</h3>
             <p className="mt-1 text-xs text-blue-100 leading-relaxed">
