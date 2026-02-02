@@ -1,0 +1,9 @@
+[
+  { "id": "all", "label": "Todas", "slug": "todas" },
+  { "id": "pascom", "label": "PASCOM", "slug": "pascom" },
+  { "id": "musica", "label": "Música", "slug": "musica" },
+  { "id": "liturgia", "label": "Liturgia", "slug": "liturgia" },
+  { "id": "sacramentos", "label": "Sacramentos", "slug": "sacramentos" },
+  { "id": "textos", "label": "Textos & Datas", "slug": "textos" },
+  { "id": "utilidades", "label": "Utilidades Pastorais", "slug": "utilidades" }
+]

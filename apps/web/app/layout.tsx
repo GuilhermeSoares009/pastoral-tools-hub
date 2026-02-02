@@ -14,7 +14,7 @@ const bodyFont = Nunito_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Ferramentas Católicas Online',
+  title: 'Ferramentas CatÃ³licas Online',
   description: 'Ferramentas gratuitas para facilitar o dia a dia pastoral.',
 };
 

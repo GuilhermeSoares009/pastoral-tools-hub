@@ -18,7 +18,7 @@ import { cn } from '@/lib/utils/cn';
 const categories = [
   { label: 'Todas', icon: Grid3X3, active: true },
   { label: 'PASCOM', icon: Camera },
-  { label: 'Música', icon: Music },
+  { label: 'MÃºsica', icon: Music },
   { label: 'Liturgia', icon: BookOpen },
   { label: 'Sacramentos', icon: Droplet },
   { label: 'Textos & Datas', icon: CalendarDays },
@@ -33,7 +33,7 @@ export function Sidebar() {
           <Landmark className="h-8 w-8 text-marian-blue" />
           <div className="leading-tight">
             <p className="font-display text-lg font-semibold text-text-primary">Ferramentas</p>
-            <p className="text-sm text-marian-blue">Católicas</p>
+            <p className="text-sm text-marian-blue">CatÃ³licas</p>
           </div>
         </div>
         <div className="flex-1 overflow-y-auto px-4 py-6">
@@ -72,7 +72,7 @@ export function Sidebar() {
           </button>
           <div className="mt-3 flex items-center justify-center gap-2 text-xs text-text-secondary">
             <ShieldCheck className="h-4 w-4 text-marian-blue" />
-            Sem cadastro · Sem dados salvos
+            Sem cadastro â€¢ Sem dados salvos
           </div>
         </div>
       </div>

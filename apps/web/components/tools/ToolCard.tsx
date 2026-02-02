@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { ArrowUpRight } from 'lucide-react';
 
 import { cn } from '@/lib/utils/cn';
@@ -7,9 +8,10 @@ type ToolCardProps = {
   title: string;
   description: string;
   accent?: 'blue' | 'gold';
+  icon?: React.ReactNode;
 };
 
-export function ToolCard({ title, description, accent = 'blue' }: ToolCardProps) {
+export function ToolCard({ title, description, accent = 'blue', icon }: ToolCardProps) {
   const isGold = accent === 'gold';
 
   return (
@@ -26,7 +28,7 @@ export function ToolCard({ title, description, accent = 'blue' }: ToolCardProps)
             isGold && 'bg-gold-accent/15 text-gold-accent',
           )}
         >
-          <span className="font-display text-lg">?</span>
+          {icon ?? <span className="font-display text-lg">?</span>}
         </div>
         <ArrowUpRight className="h-4 w-4 text-gold-accent opacity-0 transition-opacity group-hover:opacity-100" />
       </div>

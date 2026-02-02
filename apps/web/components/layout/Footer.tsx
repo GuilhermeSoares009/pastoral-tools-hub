@@ -9,14 +9,14 @@ export function Footer() {
           <div className="flex items-center justify-center gap-2 text-marian-blue md:justify-start">
             <Landmark className="h-6 w-6 text-gold-accent" />
             <span className="font-display text-lg font-semibold text-text-primary">
-              Ferramentas Católicas
+              Ferramentas CatÃ³licas
             </span>
           </div>
           <p className="mt-3 max-w-xs text-sm">
-            Ferramentas gratuitas para facilitar o dia a dia pastoral e servir à Igreja.
+            Ferramentas gratuitas para facilitar o dia a dia pastoral e servir Ã  Igreja.
           </p>
           <p className="mt-4 text-xs">
-            © 2026 Ferramentas Católicas Online.{' '}
+            Â© 2026 Ferramentas CatÃ³licas Online.{" "}
             <span className="italic text-marian-blue">Ad Maiorem Dei Gloriam.</span>
           </p>
         </div>

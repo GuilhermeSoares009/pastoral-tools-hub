@@ -1,4 +1,4 @@
-import { Search } from 'lucide-react';
+ï»¿import { Search } from 'lucide-react';
 
 import { cn } from '@/lib/utils/cn';
 import { Input } from '@/components/ui/Input';
@@ -6,11 +6,15 @@ import { Input } from '@/components/ui/Input';
 type SearchBarProps = {
   className?: string;
   placeholder?: string;
+  value?: string;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
 export function SearchBar({
   className,
-  placeholder = 'Buscar ferramenta (ex: liturgia diária, cantos, pascom)...',
+  placeholder = 'Buscar ferramenta (ex: liturgia diaria, cantos, pascom)...',
+  value,
+  onChange,
 }: SearchBarProps) {
   return (
     <div className={cn('relative', className)}>
@@ -19,6 +23,8 @@ export function SearchBar({
         className="pl-11"
         placeholder={placeholder}
         aria-label="Buscar ferramenta"
+        value={value}
+        onChange={onChange}
       />
     </div>
   );
