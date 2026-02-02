@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 
 import { cn } from '@/lib/utils/cn';
@@ -9,12 +10,12 @@ type ToolCardProps = {
   description: string;
   accent?: 'blue' | 'gold';
   icon?: React.ReactNode;
+  href?: string;
 };
 
-export function ToolCard({ title, description, accent = 'blue', icon }: ToolCardProps) {
+export function ToolCard({ title, description, accent = 'blue', icon, href }: ToolCardProps) {
   const isGold = accent === 'gold';
-
-  return (
+  const content = (
     <Card
       className={cn(
         'group flex h-full flex-col gap-4 rounded-md border-light-gray/80 p-5 transition-all hover:-translate-y-1 hover:shadow-card-hover',
@@ -47,5 +48,13 @@ export function ToolCard({ title, description, accent = 'blue', icon }: ToolCard
         Abrir ferramenta
       </span>
     </Card>
+  );
+
+  if (!href) return content;
+
+  return (
+    <Link href={href} className="block" aria-label={`Abrir ${title}`}>
+      {content}
+    </Link>
   );
 }

@@ -8,6 +8,7 @@ type ToolItem = {
   description: string;
   accent?: 'blue' | 'gold';
   category: string;
+  href?: string;
 };
 
 const categoryIcons: Record<string, JSX.Element> = {
@@ -29,6 +30,7 @@ export function ToolGrid({ items }: { items: ToolItem[] }) {
           description={tool.description}
           accent={tool.accent}
           icon={categoryIcons[tool.category]}
+          href={tool.href}
         />
       ))}
     </div>

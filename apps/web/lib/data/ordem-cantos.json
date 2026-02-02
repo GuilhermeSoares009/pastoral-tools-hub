@@ -1,0 +1,111 @@
+{
+  "title": "Ordem dos Cantos da Missa",
+  "updatedAt": "2026-02-01",
+  "sections": [
+    {
+      "title": "Ritos iniciais",
+      "items": [
+        {
+          "label": "Canto de entrada",
+          "note": "Acompanha a procissão e introduz a celebração."
+        },
+        {
+          "label": "Ato penitencial",
+          "note": "Pode incluir canto curto ou resposta recitada."
+        },
+        {
+          "label": "Hino de louvor (Glória)",
+          "note": "Domingos, solenidades e festas. Não se usa no Advento e na Quaresma."
+        },
+        {
+          "label": "Oração do dia",
+          "note": "Conclui os ritos iniciais."
+        }
+      ]
+    },
+    {
+      "title": "Liturgia da Palavra",
+      "items": [
+        {
+          "label": "Primeira leitura",
+          "note": "Canto opcional após a leitura."
+        },
+        {
+          "label": "Salmo responsorial",
+          "note": "Preferencialmente cantado."
+        },
+        {
+          "label": "Segunda leitura",
+          "note": "Domingos e solenidades."
+        },
+        {
+          "label": "Aclamação ao Evangelho",
+          "note": "Aleluia ou aclamação própria do tempo litúrgico."
+        },
+        {
+          "label": "Evangelho e homilia",
+          "note": "Sem canto durante a proclamação."
+        },
+        {
+          "label": "Profissão de fé",
+          "note": "Domingos e solenidades. Pode ser cantada."
+        },
+        {
+          "label": "Oração dos fiéis",
+          "note": "Resposta pode ser cantada."
+        }
+      ]
+    },
+    {
+      "title": "Liturgia eucarística",
+      "items": [
+        {
+          "label": "Preparação das oferendas",
+          "note": "Canto de ofertório durante a apresentação do pão e do vinho."
+        },
+        {
+          "label": "Santo",
+          "note": "Canto obrigatório, preferencialmente congregacional."
+        },
+        {
+          "label": "Cordeiro de Deus",
+          "note": "Pode ser repetido até terminar o rito da fração."
+        },
+        {
+          "label": "Canto de comunhão",
+          "note": "Acompanha a procissão da comunhão."
+        },
+        {
+          "label": "Ação de graças",
+          "note": "Canto opcional após a comunhão."
+        },
+        {
+          "label": "Oração pós-comunhão",
+          "note": "Conclui a liturgia eucarística."
+        }
+      ]
+    },
+    {
+      "title": "Ritos finais",
+      "items": [
+        {
+          "label": "Avisos",
+          "note": "Opcional, conforme a necessidade."
+        },
+        {
+          "label": "Bênção e envio",
+          "note": "Conclusão da celebração."
+        },
+        {
+          "label": "Canto de saída",
+          "note": "Acompanha a procissão de saída."
+        }
+      ]
+    }
+  ],
+  "observations": [
+    "Em celebrações mais simples, alguns cantos podem ser recitados.",
+    "Adequar repertório ao tempo litúrgico e ao rito específico do dia.",
+    "Evitar cantos longos em momentos de respostas breves."
+  ]
+}

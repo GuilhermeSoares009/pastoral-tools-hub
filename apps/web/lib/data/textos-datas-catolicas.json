@@ -1,0 +1,32 @@
+[
+  {
+    "id": "dia-do-padre",
+    "title": "Dia do Padre",
+    "category": "padres",
+    "body": "Hoje celebramos com gratidão o dom da vocação sacerdotal. Obrigado por conduzir nosso rebanho com zelo e amor. Deus o abençoe!"
+  },
+  {
+    "id": "dia-das-maes",
+    "title": "Dia das Mães",
+    "category": "familia",
+    "body": "Com carinho, rendemos graças a Deus pelas mães de nossa comunidade. Que Maria, Mãe de Jesus, as inspire e proteja sempre."
+  },
+  {
+    "id": "pascoa",
+    "title": "Páscoa do Senhor",
+    "category": "liturgico",
+    "body": "Cristo ressuscitou! Que a alegria da Páscoa renove nossa esperança e fortaleça nossa fé em cada dia."
+  },
+  {
+    "id": "natal",
+    "title": "Natal",
+    "category": "liturgico",
+    "body": "O Verbo se fez carne e habitou entre nós. Que o Menino Jesus traga paz e luz aos nossos lares."
+  },
+  {
+    "id": "padroeiro",
+    "title": "Festa do Padroeiro",
+    "category": "paróquia",
+    "body": "Celebramos com alegria o(a) padroeiro(a) de nossa comunidade. Que sua intercessão nos fortaleça na missão."
+  }
+]

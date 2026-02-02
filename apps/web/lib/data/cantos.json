@@ -1,0 +1,100 @@
+[
+  {
+    "id": "entrada-1",
+    "title": "Eis-me aqui, Senhor",
+    "moment": "entrada",
+    "tempo": ["comum", "quaresma"],
+    "style": "tradicional"
+  },
+  {
+    "id": "entrada-2",
+    "title": "Vinde, Espírito de Deus",
+    "moment": "entrada",
+    "tempo": ["comum", "pentecostes"],
+    "style": "contemporaneo"
+  },
+  {
+    "id": "entrada-3",
+    "title": "Maria, passa à frente",
+    "moment": "entrada",
+    "tempo": ["comum", "natal"],
+    "style": "contemporaneo"
+  },
+  {
+    "id": "ofertorio-1",
+    "title": "As mãos se abrem",
+    "moment": "ofertorio",
+    "tempo": ["comum", "quaresma"],
+    "style": "tradicional"
+  },
+  {
+    "id": "ofertorio-2",
+    "title": "Te ofereço, Senhor",
+    "moment": "ofertorio",
+    "tempo": ["comum", "pascoa"],
+    "style": "contemporaneo"
+  },
+  {
+    "id": "ofertorio-3",
+    "title": "Tudo é teu",
+    "moment": "ofertorio",
+    "tempo": ["comum", "natal"],
+    "style": "contemporaneo"
+  },
+  {
+    "id": "comunhao-1",
+    "title": "Pão da vida",
+    "moment": "comunhao",
+    "tempo": ["comum", "pascoa"],
+    "style": "tradicional"
+  },
+  {
+    "id": "comunhao-2",
+    "title": "Eu sou o pão",
+    "moment": "comunhao",
+    "tempo": ["comum", "quaresma"],
+    "style": "contemporaneo"
+  },
+  {
+    "id": "comunhao-3",
+    "title": "Coração Santo",
+    "moment": "comunhao",
+    "tempo": ["comum", "pentecostes"],
+    "style": "contemporaneo"
+  },
+  {
+    "id": "acao-1",
+    "title": "Bendito seja Deus",
+    "moment": "acao_de_gracas",
+    "tempo": ["comum", "natal"],
+    "style": "tradicional"
+  },
+  {
+    "id": "acao-2",
+    "title": "Gratidão",
+    "moment": "acao_de_gracas",
+    "tempo": ["comum", "pascoa"],
+    "style": "contemporaneo"
+  },
+  {
+    "id": "saida-1",
+    "title": "Ide pelo mundo",
+    "moment": "saida",
+    "tempo": ["comum", "pascoa"],
+    "style": "tradicional"
+  },
+  {
+    "id": "saida-2",
+    "title": "Somos povo de Deus",
+    "moment": "saida",
+    "tempo": ["comum", "pentecostes"],
+    "style": "contemporaneo"
+  },
+  {
+    "id": "saida-3",
+    "title": "Noite feliz",
+    "moment": "saida",
+    "tempo": ["natal"],
+    "style": "tradicional"
+  }
+]
